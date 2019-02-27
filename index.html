@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <style>
+	*{margin:0;padding:0;}
+	ul,li{list-style:none;}
+	#slide{height:440px;position:relative;overflow:hidden;}
+	#slide ul{width:400%;height:100%;transition:1s;}
+	#slide ul:after{content:"";display:block;clear:both;}
+	#slide li{float:left;width:25%;height:100%;}
+	#slide li:nth-child(1){background-image: url(bgimg.jpeg)}
+	#slide li:nth-child(2){background-image: url(do.jpeg)}
+	#slide li:nth-child(3){background-image: url(ja.jpeg)}
+	#slide li:nth-child(4){background-image: url(jon.jpeg)}
+	#slide input{display:none;}
+	#slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+	#slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+	#pos1:checked~ul{margin-left:0%;}
+	#pos2:checked~ul{margin-left:-100%;}
+	#pos3:checked~ul{margin-left:-200%;}
+	#pos4:checked~ul{margin-left:-300%;}
+	#pos1:checked~.pos>label:nth-child(1){}
+	#pos2:checked~.pos>label:nth-child(2){background:#666;}
+	#pos3:checked~.pos>label:nth-child(3){background:#666;}
+	#pos4:checked~.pos>label:nth-child(4){background:#666;}
+        
+        .srbRoadBtn{
+            background-color: azure;
+            color: white;
+        }
+    </style>
+
+    
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="index.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+  <div id="header" class="container">
+    <div id="logo">
+      <a title="서라벌 길라잡이" href="index.html">
+        <img src="sorabol%20logo.png" height="80" alt="서라벌 길라잡이"></a>
+</div>
+    <div id="menu" class="one" style="z-index:2">
+  <ul>
+    <li class="current_page_item"><a href="index.html" accesskey="1" title="" class="button2">개요</a>
+    </li>
+    <li><a href="reg_club.html" accesskey="2" title="정규동아리"class="button2">정규동아리</a>
+<ul id="auth1">
+          <li><a href="reg_NS.html"class="button2">이과계열</a>
+            <ul class="five">
+                <li><a href="reg_math.html"class="button2">수학</a></li>
+                <li><a href="reg_science.html"class="button2">과학</a></li>
+                <li><a href="reg_engineering.html"class="button2">공학</a></li>
+            </ul>
+          </li>
+          <li><a href="reg_LA.html"class="button2">문과계열</a>
+            <ul class="six">
+                <li><a href="reg_language.html"class="button2">언어</a></li>
+                <li><a href="reg_media.html"class="button2">경제</a></li>
+                <li><a href="reg_social.html"class="button2">사회</a></li>
+           </ul>
+         </li>
+          <li><a href="reg_AP.html"class="button2">예체능계열</a>
+            <ul class="seven">
+                <li><a href="reg_music.html"class="button2">음악</a></li>
+                <li><a href="reg_art.html"class="button2">미술</a></li>
+                <li><a href="reg_PE.html"class="button2">체육</a></li>
+           </ul>
+         </li>
+          <li><a href="auth_etc.html"class="button2">기타 계열</a>
+      </ul>
+    </li>
+    
+
+    <li><a href="auth_club.html" accesskey="3" title=""class="button2">자율동아리</a>
+      <ul id="auth1">
+          <li><a href="auth_NS.html"class="button2">이과계열</a>
+            <ul class="two">
+                <li><a href="auth_math.html"class="button2">수학</a></li>
+                <li><a href="auth_science.html"class="button2">과학</a></li>
+                <li><a href="auth_engineering.html" class="button2">공학</a></li>
+            </ul>
+          </li>
+          <li><a href="auth_LA.html" class="button2">문과계열</a>
+            <ul class="three">
+                <li><a href="auth_language.html"class="button2">언어</a></li>
+                <li><a href="auth_Economy.html"class="button2">경제</a></li>
+                <li><a href="auth_social.html"class="button2">사회</a></li>
+           </ul>
+         </li>
+          <li><a href="auth_AP.html"class="button2">예체능계열</a>
+            <ul class="four">
+                <li><a href="auth_music.html"class="button2">음악</a></li>
+                <li><a href="auth_art.html"class="button2">미술</a></li>
+                <li><a href="auth_PE.html"class="button2">체육</a></li>
+           </ul>
+         </li>
+          <li><a href="auth_etc.html" class="button2">기타 계열</a>
+      </ul>
+    </li>
+    <li><a href="srb_rule.html" accesskey="4" title=""class="button2">학교 규정</a></li>
+    <li><a href="srb_sc.html" accesskey="5" title=""class="button2">주요 일정</a></li>
+  </ul>
+</div>
+</div>
+</div>
+<div id="header-featured">
+    <div id="slide">
+	<input type="radio" name="pos" id="pos1" checked>
+	<input type="radio" name="pos" id="pos2">
+	<input type="radio" name="pos" id="pos3">
+	<input type="radio" name="pos" id="pos4">
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<p class="pos">
+		<label for="pos1"></label>
+		<label for="pos2"></label>
+		<label for="pos3"></label>
+		<label for="pos4"></label>
+	</p>
+</div>
+    </div>
+
+<div id="wrapper"> 
+  <div id="featured-wrapper">
+    <div id="featured" class="container">
+      <div class="column1"> <span class="icon icon-comment"></span>
+        <div class="title">
+          <h2>서라벌 고등학교</h2>
+        </div>
+        <p>신입생 여러분들의 궁금점을 알려드립니다<br>학교 생활 TIP!<br>여기에 모두 있습니다</p>
+      </div>
+      <div class="column2"> <span class="icon icon-group"></span>
+        <div class="title">
+          <h2>동아리는 무엇인가요?</h2>
+        </div>
+        <p>정규/자율동아리<br>분야별 동아리<br>나의 동아리는?</p>
+      </div>
+      <div class="column3"> <span class="icon icon-legal"></span>
+        <div class="title">
+          <h2>학교 규정은?</h2>
+        </div>
+        <p>두발/복장/생활 등등<br>중요 규정을 알아보세요!</p>
+      </div>
+      <div class="column4"> <span class="icon icon-calendar"></span>
+        <div class="title">
+          <h2>주요 일정은?</h2>
+        </div>
+        <p>시험은 언제지?<br>대회는 뭐가 있어?<br>이 밖에도 많은 행사를 알아보세요!</p>
+      </div>
+    </div>
+  </div>
+    
+  <div id="extra" class="container">
+    <h2>Developer</h2><br>
+    <span>NOISY IT 소속<br><br>1학년 : 김규석, 민승현, 이승민, 이창민<br><br>2학년 : 김현재, 백지승</span>
+      <p>본 페이지는 <strong>동아리 [NOISY IT]</strong> 에서 <strong>신입생 및 재학생이 학교의 정보를 쉽게 알아볼 수 있도록 하기 위하여 제작하였습니다</strong></p>
+      <p>카카오톡 플러스친구에서 간단하게 학교에 대한 정보를 볼 수 있습니다.</p><br>
+      
+      <div class="bottomBtn">
+      <div style="float: left; width: 25%;"><img src="info.jpeg" height="60" alt="서라벌길라잡이"><br><a href="#" class="button">서라벌 길라잡이</a></div>
+      <div style="float: left; width: 25%"><img src="kakao.jpeg" height="60" alt="서라벌플러스친구"><br><a href="http://pf.kakao.com/_KCnxbj" target="_blank" class="button kakaobutton">서라벌 플러스친구</a></div>
+      <div style="float: left; width: 25%"><img src="Noisy%20IT.png" height="60" alt="NoisyIT개발자페이지"><br><a href="Noisy%20IT.html" target="_blank" class="button NoisyIT">Noisy IT</a></div>
+        <div style="float: left; width: 25%"><img src="vr.png" height="60" alt="서라벌 로드뷰"><br><a href="https://look360.kr/vr/sorabolhs/sorabol_hs/8383" target="_blank" class="button vrbutton">서라벌 로드뷰</a></div>    
+    </div>
+</div>
+    </div>
+<div id="copyright" class="container">
+  <p>SORABOL HIGH SCHOOL | Develops by NOISY IT | 김규석, 김현재, 민승현, 백지승, 이승민, 이창민</p>
+</div>
+</body>
+</html>
